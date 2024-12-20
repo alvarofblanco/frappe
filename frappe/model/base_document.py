@@ -782,8 +782,8 @@ class BaseDocument:
 		missing = []
 
 		for df in self.meta.get("fields", {"reqd": ("=", 1)}):
-			if self.get(df.fieldname) in (None, []) or not has_content(df):
-				missing.append((df.fieldname, get_msg(df)))
+			# if self.get(df.fieldname) in (None, []) or not has_content(df):
+			# 	missing.append((df.fieldname, get_msg(df)))
 
 		# check for missing parent and parenttype
 		if self.meta.istable:
