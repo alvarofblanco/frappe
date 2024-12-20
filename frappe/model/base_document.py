@@ -781,7 +781,7 @@ class BaseDocument:
 
 		missing = []
 
-		for df in self.meta.get("fields", {"reqd": ("=", 1)}):
+		# for df in self.meta.get("fields", {"reqd": ("=", 1)}):
 			# if self.get(df.fieldname) in (None, []) or not has_content(df):
 			# 	missing.append((df.fieldname, get_msg(df)))
 
